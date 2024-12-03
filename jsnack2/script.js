@@ -4,7 +4,7 @@ const invitati = [ "Alessio", "Luca", "Davide", "Marco", "Simone"];
 const nomeInvitato = prompt("Inserisci il tuo nome:");
 let puoPartecipare = false;
 for (let i = 0; i < invitati.length; i++) {
-    if (invitati[i] === nomeInvitato) {
+    if (invitati[i].toLowerCase() === nomeInvitato.toLowerCase()) {
         puoPartecipare = true;
     }
 }
